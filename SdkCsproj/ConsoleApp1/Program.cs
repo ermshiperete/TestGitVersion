@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Reflection;
-using TestGitVersionCore;
 
 namespace ConsoleApp1
 {
@@ -13,7 +12,6 @@ namespace ConsoleApp1
 			var gitVersionInformationType = assembly.GetType("GitVersionInformation");
 			var versionField = gitVersionInformationType.GetField("InformationalVersion");
 			Console.WriteLine(versionField.GetValue(null));
-			Console.WriteLine(Class1.GetVersion());
 		}
 	}
 }

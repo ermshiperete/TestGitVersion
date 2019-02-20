@@ -1,21 +1,21 @@
 #!/bin/bash
 echo "Building old-style csproj"
-msbuild OldCsproj/TestGitVersion.sln
+msbuild /t:Restore /t:Build OldCsproj/TestGitVersion.sln
 
 echo "Building sdk-style (single framework) csproj with msbuild"
-msbuild SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
+msbuild /t:Restore /t:Build SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
 
 echo "Building sdk-style (multi-framework) csproj with msbuild"
-msbuild SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
+msbuild /t:Restore /t:Build SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
 
 echo "Building sdk-style (single framework) csproj with dotnet build"
-dotnet build SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
+dotnet build /t:Restore /t:Build SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
 
 echo "Building sdk-style (multi-framework) csproj with dotnet build"
-dotnet build SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
+dotnet build /t:Restore /t:Build SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
 
 echo "Building sdk-style (single framework) csproj with dotnet msbuild"
-dotnet msbuild SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
+dotnet msbuild /t:Restore /t:Build SdkCsproj/ConsoleApp1/ConsoleApp1.csproj
 
 echo "Building sdk-style (multi-framework) csproj with dotnet msbuild"
-dotnet msbuild SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
+dotnet msbuild /t:Restore /t:Build SdkCsproj/TestGitVersionCore/TestGitVersionCore.csproj
