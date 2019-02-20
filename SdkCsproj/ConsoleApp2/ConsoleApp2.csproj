@@ -10,7 +10,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="GitVersionTask" Version="5.0.0-beta1-72" />
+	  <PackageReference Include="GitVersionTask.alt" Version="4.0.2-alpha-0004" />
 	</ItemGroup>
 
 </Project>
