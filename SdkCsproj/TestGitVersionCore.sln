@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitVersionCore", "TestG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D6CF2A13-6C96-463B-97CA-36687FF85234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{8A56C943-35F1-4914-ABA0-F15F7CDBA3AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{D6CF2A13-6C96-463B-97CA-36687FF85234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6CF2A13-6C96-463B-97CA-36687FF85234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6CF2A13-6C96-463B-97CA-36687FF85234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A56C943-35F1-4914-ABA0-F15F7CDBA3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A56C943-35F1-4914-ABA0-F15F7CDBA3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A56C943-35F1-4914-ABA0-F15F7CDBA3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A56C943-35F1-4914-ABA0-F15F7CDBA3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
